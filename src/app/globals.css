@@ -7,6 +7,11 @@
   --foreground: #171717;
 }
 
+
+.container {
+  max-width: 1265px;
+  margin: 0 auto;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #FFFFFF;
@@ -18,4 +23,34 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: 'Poppins', sans-serif;
+}
+
+/* Custom Scrollbar for Plantation Theme */
+::-webkit-scrollbar {
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0f2e9; /* Light greenish background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4caf50; /* Green thumb to match plantation aesthetics */
+  border-radius: 10px;
+  border: 2px solid #c8e6c9; /* Soft green border */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #388e3c; /* Darker green on hover */
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

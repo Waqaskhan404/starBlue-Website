@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 const NavBar = () => {
     const pathName = usePathname();
     return (
-        <nav className="bg-white shadow-md p-4 flex items-center justify-between px-32 font-[Poppins] text-[14px] font-normal">
+        <nav className="bg-white shadow-md p-4 font-[Poppins] text-[14px] font-normal">
+            <div className="container flex items-center justify-between ">
             {/* Left Side - Logos */}
             <div className="flex items-center gap-4">
                 <img src="/logo.png" alt="Logo 1" className="h-20" />
@@ -34,6 +35,7 @@ const NavBar = () => {
                     </li>
                 ))}
             </ul>
+            </div>
         </nav>
     );
 };

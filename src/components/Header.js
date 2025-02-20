@@ -14,7 +14,8 @@ const FontAwesomeIcon = dynamic(() =>
 
 const Header = () => {
     return (
-      <header className="bg-[#004712] p-3 flex items-center justify-between px-[180px] font-poppins">
+      <header className="bg-[#004712] font-poppins">
+        <div className="container p-3 flex items-center justify-between">
         <div className="flex items-center gap-10">
           {/* Social Media Icons */}
           <div className="flex gap-2">
@@ -43,6 +44,7 @@ const Header = () => {
           className="p-[0.4rem] pl-4 text-[90%] bg-[#F1F2F3] rounded-l-[1.5rem] w-[22rem] border border-r-0 border-[#AAAAAA] placeholder:text-[#AAAAAA]"
         />
         <button className="bg-[#54595F] text-[90%] text-white px-[0.4rem] py-[0.4rem] rounded-r-[1.5rem] border border-l-0 border-[#AAAAAA]" style={{ paddingLeft: '1rem', paddingRight: '1.5rem',fontWeight:"500" }}>Search</button>
+      </div>
       </div>
       </header>
     );
