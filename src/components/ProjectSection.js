@@ -24,9 +24,29 @@ const ProjectSection = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto text-center">
         <div className="flex justify-between items-center">
-        <h2 className="text-5xl font-bold text-gray-800">
-          <span className="text-gray-300">OUR </span>PROJECTS
+          <div>
+            <div>
+            <h2
+  className="text-[50px] font-extrabold uppercase text-white text-left"
+  style={{
+    fontFamily: "'Poppins', sans-serif",
+    textShadow: "0px 0px 3px rgb(0 0 0 / 96%)", // Increase blur radius for visibility
+    marginBottom:"-11px"
+ 
+ }}
+>
+  OUR
+</h2>
+
+
+
+        </div>
+        <div>
+        <h2 className="text-5xl font-bold text-[#BE854C]">
+          PROJECTS
         </h2>
+        </div>
+        </div>
         <Link
           href="/projects"
           className="inline-block text-lg font-semibold text-yellow-700 hover:underline"

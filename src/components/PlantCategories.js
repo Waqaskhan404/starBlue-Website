@@ -17,13 +17,24 @@ const categories = [
 
 const PlantCategories = () => {
   return (
-    <div className="container mx-auto  py-10">
+    <div className="container mx-auto py-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {categories.map((category) => (
-          <div key={category.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src={category.image} alt={category.name} className="w-full h-48 object-cover" />
+          <div
+            key={category.id}
+            className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-all duration-500 hover:scale-110 hover:shadow-xl"
+          >
+            <div className="overflow-hidden">
+              <img
+                src={category.image}
+                alt={category.name}
+                className="w-full h-48 object-cover transition-all duration-500 hover:scale-110 hover:brightness-75"
+              />
+            </div>
             <div className="p-4 text-center">
-              <h3 className="text-xl font-bold text-green-900">{category.name}</h3>
+              <h3 className="text-xl font-bold text-green-900 transition-all duration-500 hover:text-yellow-500">
+                {category.name}
+              </h3>
             </div>
           </div>
         ))}

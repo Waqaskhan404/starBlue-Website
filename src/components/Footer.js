@@ -1,7 +1,11 @@
 "use client";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -23,21 +27,38 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         {/* Stay Updated Section */}
         <h2 className="text-3xl font-bold text-yellow-600">STAY UPDATED</h2>
-        <p className="mt-2 text-gray-300">Get exclusive updates about Wahat Al Sahraa</p>
+        <p className="mt-2 text-gray-300">
+          Get exclusive updates about Wahat Al Sahraa
+        </p>
         <div className="mt-4 flex justify-center">
-          <input type="email" placeholder="Enter Your Email..." className="p-3 w-80 rounded-l-md text-gray-900" />
-          <button className="bg-yellow-600 text-white px-5 rounded-r-md">Subscribe!</button>
+          <input
+            type="email"
+            placeholder="Enter Your Email..."
+            className="p-3 w-80 rounded-l-md text-gray-900"
+          />
+          <button className="bg-yellow-600 text-white px-5 rounded-r-md">
+            Subscribe!
+          </button>
         </div>
 
         {/* Social Icons */}
         <div className="mt-6 flex justify-center space-x-6">
-          <a href="#" className="text-yellow-500 hover:text-yellow-300 text-2xl">
+          <a
+            href="#"
+            className="text-yellow-500 hover:text-yellow-300 text-2xl"
+          >
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
-          <a href="#" className="text-yellow-500 hover:text-yellow-300 text-2xl">
+          <a
+            href="#"
+            className="text-yellow-500 hover:text-yellow-300 text-2xl"
+          >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="#" className="text-yellow-500 hover:text-yellow-300 text-2xl">
+          <a
+            href="#"
+            className="text-yellow-500 hover:text-yellow-300 text-2xl"
+          >
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </div>
@@ -48,11 +69,11 @@ const Footer = () => {
             <Link
               key={href}
               href={href}
-              className={`${
+              className={`relative transition duration-200 pb-1 ${
                 pathName === href
-                  ? "text-yellow-400 border-b-2 border-yellow-400"
-                  : "hover:text-yellow-400 hover:border-b-2 hover:border-yellow-400"
-              } transition duration-200`}
+                  ? "text-yellow-400 after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-yellow-400"
+                  : "hover:text-yellow-400 after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-yellow-400 after:opacity-0 hover:after:opacity-100"
+              }`}
             >
               {label}
             </Link>
@@ -92,7 +113,10 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-8 text-gray-400 text-sm border-t border-gray-600 pt-4">
-          <p>© 2025 Wahat Al Sahraa Nurseries, All rights reserved | Designed by Desert Group IT</p>
+          <p>
+            © 2025 Wahat Al Sahraa Nurseries, All rights reserved | Designed by
+            Desert Group IT
+          </p>
         </div>
       </div>
     </footer>

@@ -20,7 +20,7 @@ const Facts = () => {
       </div>
       
       {/* Middle Section */}
-      <div className="max-w-2xl">
+      <div className="max-w-2xl flex flex-col items-center">
         <p className="mt-4 text-[16-px] text-[#7A7A7A] w-[80%]" style={{fontFamily:"Roboto,sans-serif",fontWeight:"400"}}>Our inventory stocks over 4000 varieties of tropical, sub-tropical, native & adaptive plants and many richer collection of specimens with unique shapes and dimensions, and a wide range of specialties among which Mediterranean plants, bonsais, tropical climate indoor plants; a complete range at the best value for money.</p>
         <p className="mt-4 text-[16-px] text-[#7A7A7A] w-[84%]" style={{fontFamily:"Roboto,sans-serif",fontWeight:"400"}}>Now more than ever, we are committed to help our customers and visitors to enjoy the benefits of bringing nature into their landscape and gardens.</p>
       </div>
