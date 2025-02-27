@@ -35,8 +35,8 @@ const NavBar = () => {
                         { name: "Products", path: "/products" },
                         { name: "Projects", path: "/projects" },
                         { name: "Catalogue", path: "/catalogue" },
-                        { name: "Blog", path: "/blog" },
-                        { name: "Branches", path: "/branches" },
+                        { name: "Our Services", path: "/our-services" },
+                        { name: "Our Gallery", path: "/our-gallery" },
                         { name: "Contact Us", path: "/contact" }
                     ].map((item) => (
                         <li key={item.path}>
@@ -69,8 +69,8 @@ const NavBar = () => {
                         { name: "Products", path: "/products" },
                         { name: "Projects", path: "/projects" },
                         { name: "Catalogue", path: "/catalogue" },
-                        { name: "Blog", path: "/blog" },
-                        { name: "Branches", path: "/branches" },
+                        { name: "Our Services", path: "/our-services" },
+                        { name: "Our Gallery", path: "/our-gallery" },
                         { name: "Contact Us", path: "/contact" }
                     ].map((item) => (
                         <li 

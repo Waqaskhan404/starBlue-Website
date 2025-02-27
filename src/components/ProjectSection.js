@@ -3,19 +3,19 @@ import Link from "next/link";
 const projects = [
   {
     title: "CORPORATE",
-    image: "/commerical.jpg",
+    image: "/project1.jpg",
   },
   {
     title: "COMMERCIAL",
-    image: "/commerical.jpg",
+    image: "/project2.jpg",
   },
   {
     title: "RESIDENTIAL",
-    image: "/commerical.jpg",
+    image: "/project3.jpg",
   },
   {
     title: "HOSPITALITY",
-    image: "/commerical.jpg",
+    image: "/project4.jpg",
   },
 ];
 
