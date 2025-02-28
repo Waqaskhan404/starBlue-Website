@@ -2,11 +2,10 @@
 import { useState, useEffect } from "react";
 
 const images = [
-  { src: "/image1.jpg", text: "Al Wahat Al Sahara Nursery", smallText: "Dubai" },
+  { src: "/image1.jpg", text: "SB LANDSCAPING & AGRICULTURAL SERVICES, Nursery", smallText: "Dubai" },
   { src: "/image2.jpg", text: "Beautiful Landscapes", smallText: "UAE" },
   { src: "/image3.jpg", text: "Green Living Spaces", smallText: "Middle East" },
-  { src: "/image4.jpg", text: "Fields Are Settled  Now", smallText: "Sharjah" },
-
+  { src: "/image4.jpg", text: "Fields Are Settled Now", smallText: "Sharjah" },
 ];
 
 const HeroSlider = () => {
@@ -52,10 +51,14 @@ const HeroSlider = () => {
           className={`w-full h-full object-cover transition-transform duration-[5s] ${isZooming ? "scale-110" : "scale-100"}`}
         />
 
-        {/* Overlay Text - Positioned at the Bottom */}
-        <div className="absolute bottom-20 w-full flex flex-col items-center text-center">
-          <h1 className="text-white text-5xl font-bold mb-2">{images[currentIndex].text}</h1>
-          <h6 className="text-white text-2xl font-semibold">{images[currentIndex].smallText}</h6>
+        {/* Overlay Text - Responsive Sizing */}
+        <div className="absolute bottom-10 md:bottom-16 lg:bottom-20 w-full flex flex-col items-center text-center px-4">
+          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2">
+            {images[currentIndex].text}
+          </h1>
+          <h6 className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl font-semibold">
+            {images[currentIndex].smallText}
+          </h6>
         </div>
       </div>
 
@@ -74,12 +77,12 @@ const HeroSlider = () => {
       </button>
 
       {/* Pagination Dots */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3">
+      <div className="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-4 h-4 rounded-full transition-all duration-300 ${
+            className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-all duration-300 ${
               currentIndex === index ? "bg-[#BE854C] scale-110" : "bg-gray-400 hover:bg-gray-300"
             }`}
           ></button>

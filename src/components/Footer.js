@@ -17,7 +17,6 @@ const Footer = () => {
     { href: "/products", label: "Products" },
     { href: "/projects", label: "Projects" },
     { href: "/our-services", label: "Our Services" },
-    { href: "/catalogue", label: "Catalogue" },
     { href: "/our-gallery", label: "Our Gallery" },
     { href: "/contact", label: "Contact Us" },
   ];
@@ -30,7 +29,7 @@ const Footer = () => {
           STAY UPDATED
         </h2>
         <p className="mt-2 text-gray-300 text-sm sm:text-base">
-          Get exclusive updates about Wahat Al Sahraa
+          Get exclusive updates about STAR BLOOM LANDSCAPING & AGRICULTURAL SERVICES, SP LLC,
         </p>
         <div className="mt-4 flex flex-col sm:flex-row justify-center items-center">
           <input
@@ -45,13 +44,22 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className="mt-6 flex justify-center space-x-4 sm:space-x-6">
-          <a href="#" className="text-yellow-500 hover:text-yellow-300 text-xl sm:text-2xl">
+          <a
+            href="#"
+            className="text-yellow-500 hover:text-yellow-300 text-xl sm:text-2xl"
+          >
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
-          <a href="#" className="text-yellow-500 hover:text-yellow-300 text-xl sm:text-2xl">
+          <a
+            href="#"
+            className="text-yellow-500 hover:text-yellow-300 text-xl sm:text-2xl"
+          >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="#" className="text-yellow-500 hover:text-yellow-300 text-xl sm:text-2xl">
+          <a
+            href="#"
+            className="text-yellow-500 hover:text-yellow-300 text-xl sm:text-2xl"
+          >
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </div>
@@ -78,7 +86,7 @@ const Footer = () => {
           <div>
             <h3 className="text-yellow-500 font-bold">ADDRESS</h3>
             <p>
-              Wahat Al Sahraa Nurseries, Al Amardi St., Al Khawaneej, <br />
+              SB LANDSCAPING & AGRICULTURAL SERVICES, <br />
               P.O. Box 37579, Dubai, United Arab Emirates.
             </p>
           </div>
@@ -107,8 +115,8 @@ const Footer = () => {
         {/* Copyright (Centered) */}
         <div className="mt-8 text-gray-400 text-xs sm:text-sm border-t border-gray-600 pt-4">
           <p>
-            © 2025 Wahat Al Sahraa Nurseries, All rights reserved | Designed by
-            Desert Group IT
+            © 2025 STAR BLOOM LANDSCAPE AND AGRICULTURAL SERVICES - L.L.C -
+            S.P.CSERVICES, All rights reserved | Designed by Waqas Khan
           </p>
         </div>
       </div>

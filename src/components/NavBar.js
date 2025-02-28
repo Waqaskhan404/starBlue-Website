@@ -10,18 +10,17 @@ const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <nav className="bg-white shadow-md p-4 font-[Poppins] text-[14px] font-semibold relative">
-            <div className="container flex items-center justify-between">
+        <nav className="bg-white shadow-md  font-[Poppins] text-[14px] font-semibold relative">
+            <div className="container flex  items-center justify-between">
                 
                 {/* Left Side - Logos */}
                 <div className="flex items-center gap-4">
-                    <img src="/logo.png" alt="Logo 1" className="h-14 md:h-20" />
-                    <img src="/logo-2.png" alt="Logo 2" className="h-10 md:h-16" />
+                    <img src="/SB-Logo.png" alt="logo-sb" className="h-20 md:h-20" />
                 </div>
 
                 {/* Hamburger Menu Button (Small & Tablet Screens) */}
                 <button 
-                    className="lg:hidden text-green-700 text-2xl z-50" 
+                    className="lg:hidden text-green-700 text-2xl z-50 p-4" 
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
                     <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
@@ -34,7 +33,6 @@ const NavBar = () => {
                         { name: "About Us", path: "/about" },
                         { name: "Products", path: "/products" },
                         { name: "Projects", path: "/projects" },
-                        { name: "Catalogue", path: "/catalogue" },
                         { name: "Our Services", path: "/our-services" },
                         { name: "Our Gallery", path: "/our-gallery" },
                         { name: "Contact Us", path: "/contact" }
@@ -68,7 +66,6 @@ const NavBar = () => {
                         { name: "About Us", path: "/about" },
                         { name: "Products", path: "/products" },
                         { name: "Projects", path: "/projects" },
-                        { name: "Catalogue", path: "/catalogue" },
                         { name: "Our Services", path: "/our-services" },
                         { name: "Our Gallery", path: "/our-gallery" },
                         { name: "Contact Us", path: "/contact" }

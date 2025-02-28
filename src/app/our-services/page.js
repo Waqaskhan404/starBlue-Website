@@ -6,7 +6,7 @@ const services = [
   {
     title: "Plant Production",
     description: "We specialize in high-quality plant production, ensuring healthy growth and sustainability. Our nursery provides a wide variety of plants suitable for all landscapes.",
-    images: ["/palms1.jpg", "/palms2.jpg", "/palms3.jpg"],
+    images: ["/plants-production-1.jpg","/plants-production-2.jpg","/plants-production-3.jpg","/plants-production-4.jpg","/plants-production-5.jpg","/plants-production-6.jpg","/plants-production-7.jpg","/plants-production-8.jpg","/plants-production-9.jpg",],
   },
   {
     title: "Landscape Designing",
@@ -32,7 +32,14 @@ export default function Services() {
           <p className="mb-4 text-gray-600">{service.description}</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {service.images.map((img, i) => (
-              <Image key={i} src={img} alt={service.title} width={300} height={200} className="rounded-lg shadow-lg" />
+             <Image 
+             key={i} 
+             src={img} 
+             alt={service.title} 
+             width={300} 
+             height={200} 
+             className="rounded-lg shadow-lg object-cover h-[200px] w-full"
+           />
             ))}
           </div>
         </div>

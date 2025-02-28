@@ -5,7 +5,7 @@ const ContactForm = () => {
     <section className="container mx-auto py-16 px-6 bg-green-900" style={{marginBottom:"40px"}}>
       <h2 className="text-4xl font-bold text-center text-white mt-10 ">Get In Touch</h2>
       <p className="text-center text-white mt-2">
-        We invite you to explore our extensive range of plants and experience the exceptional service that THAI FLORA is known for.
+        We invite you to explore our extensive range of plants and experience the exceptional service that SB LANDSCAPING & AGRICULTURAL SERVICES, SP LLC, is known for.
       </p>
 
       {/* Form and Map Grid */}
