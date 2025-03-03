@@ -1,10 +1,10 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { products } from "../products/products";
 
-export default function SearchResults() {
+function SearchComponent() {
   const searchParams = useSearchParams();
   const query = searchParams.get("query");
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -38,5 +38,13 @@ export default function SearchResults() {
         <p className="text-gray-500">No products found.</p>
       )}
     </div>
+  );
+}
+
+export default function SearchResults() {
+  return (
+    <Suspense fallback={<p className="text-gray-500">Loading...</p>}>
+      <SearchComponent />
+    </Suspense>
   );
 }
