@@ -20,6 +20,11 @@ const services = [
   },
 ];
 
+export const metadata = {
+  title: "Our Services - StarBloom Plantation",
+  description: "Learn more about StarBloom Plantation.",
+};
+
 export default function Services() {
   return (
     <div className="container mx-auto p-6">

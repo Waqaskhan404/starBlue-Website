@@ -43,11 +43,11 @@ const Header = () => {
         <div className="flex flex-col md:flex-row items-center gap-4 text-center">
           <div className="flex items-center gap-2">
             <FontAwesomeIcon icon={faEnvelope} size="lg" className="hover:text-[#AB7F46]" />
-            <span>nursery.enquiry@desertgroup.ae</span>
+            <span>nursery.enquiry@starbloom.ae</span>
           </div>
           <div className="flex items-center gap-2">
             <FontAwesomeIcon icon={faPhone} size="lg" className="hover:text-[#AB7F46]" />
-            <span>+971 4 2891 063</span>
+            <span>+971 555 655741</span>
           </div>
         </div>
 

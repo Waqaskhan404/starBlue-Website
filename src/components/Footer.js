@@ -86,17 +86,16 @@ const Footer = () => {
           <div>
             <h3 className="text-yellow-500 font-bold">ADDRESS</h3>
             <p>
-              SB LANDSCAPING & AGRICULTURAL SERVICES, <br />
-              P.O. Box 37579, Dubai, United Arab Emirates.
+            Mussafah 26, Building no:21,Abu Dhabi UAE
             </p>
           </div>
           <div>
             <h3 className="text-yellow-500 font-bold">Contact No</h3>
-            <p>800 337378, +971 4 289 1063</p>
+            <p>+971 555 655741</p>
           </div>
           <div>
             <h3 className="text-yellow-500 font-bold">EMAIL</h3>
-            <p>nursery.enquiry@desertgroup.ae</p>
+            <p>nursery.enquiry@starbloom.ae</p>
           </div>
         </div>
 

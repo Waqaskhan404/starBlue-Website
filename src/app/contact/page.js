@@ -2,8 +2,8 @@ import ContactForm from "@/components/ContactForm"
 import ContactUsBanner from "@/components/ContactUsBanner"
 
 export const metadata = {
-  title: "Contact Us - StarBlue Plantation",
-  description: "Learn more about StarBlue Plantation.",
+  title: "Contact Us - StarBloom Plantation",
+  description: "Learn more about StarBloom Plantation.",
 };
 
 const Contact = () => {

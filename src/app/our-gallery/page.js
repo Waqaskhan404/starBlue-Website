@@ -15,6 +15,11 @@ const images = [
 
 ];
 
+export const metadata = {
+  title: "Our Gallery - StarBloom Plantation",
+  description: "Learn more about StarBloom Plantation.",
+};
+
 const Gallery = () => {
   return (
     <div className="container mx-auto p-6">

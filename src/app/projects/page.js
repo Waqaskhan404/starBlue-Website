@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 const projects = [
   {
-    title: "Dubai Hills – Sidra 3",
+    title: "Dubai Hills",
     description: "Palms, Trees, Shrubs, Grasses, Succulents, Groundcovers and Seasonals",
     images: ["/project-card1.jpg", "/project-card1-2.jpg", "/project-card1-1.jpg", "/project-card1-2.jpg"],
   },
@@ -13,11 +13,13 @@ const projects = [
     images: ["/project-card2.jpg", "/project-card2-1.jpg", "/project-card2.jpg", "/project-card2-1.jpg"],
   },
   {
-    title: "Dubai Hills – Maple 3",
+    title: "Dubai Hills",
     description: "Palms, Trees, Shrubs, Grasses, Succulents, Groundcovers and Seasonals",
     images: ["/project-card3.jpg", "/project-card3-1.jpg", "/project-card3-2.jpg", "/project-card3-1.jpg"],
   },
 ];
+
+
 
 const ProjectCard = ({ project }) => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -28,6 +30,10 @@ const ProjectCard = ({ project }) => {
     }, 3000);
     return () => clearInterval(interval);
   }, [project.images.length]);
+
+  useEffect(() => {
+    document.title = "Projects - StarBloom Plantation";
+  }, []);
 
   return (
     <div className="border rounded-lg shadow-lg overflow-hidden">

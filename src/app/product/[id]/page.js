@@ -4,6 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { plantData } from "../plantData";
 
+export const metadata = {
+  title: "Products Detail - StarBloom Plantation",
+  description: "Learn more about StarBloom Plantation.",
+};
+
 
 
 export default function PlantDetails() {

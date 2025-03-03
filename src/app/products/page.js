@@ -11,6 +11,10 @@ export default function ProductPage() {
   const itemsPerPage = 12;
 
   useEffect(() => {
+    document.title = "Products - StarBloom Plantation";
+  }, []);
+
+  useEffect(() => {
     return () => setSelectedCategories([]); // Reset selection on unmount
   }, []);
 

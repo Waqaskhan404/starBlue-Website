@@ -11,8 +11,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Home - StarBlue Plantation",
-  description: "Learn more about StarBlue Plantation.",
+  title: "Home - StarBloom Plantation",
+  description: "Learn more about StarBloom Plantation.",
 };
 
 export default function RootLayout({ children, pageProps }) {
