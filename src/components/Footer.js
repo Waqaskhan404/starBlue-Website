@@ -91,20 +91,8 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <h3 className="text-yellow-500 font-bold">GPS COORDINATES</h3>
-            <p>25.130272, 55.212613</p>
-          </div>
-          <div>
-            <h3 className="text-yellow-500 font-bold">CUSTOMER ENQUIRY</h3>
-            <p>+971 55 503 9230</p>
-          </div>
-          <div>
-            <h3 className="text-yellow-500 font-bold">CORPORATE OFFICE</h3>
+            <h3 className="text-yellow-500 font-bold">Contact No</h3>
             <p>800 337378, +971 4 289 1063</p>
-          </div>
-          <div>
-            <h3 className="text-yellow-500 font-bold">FAX</h3>
-            <p>+971 4 340 4441</p>
           </div>
           <div>
             <h3 className="text-yellow-500 font-bold">EMAIL</h3>
