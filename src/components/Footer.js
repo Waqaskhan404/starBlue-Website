@@ -31,7 +31,7 @@ const Footer = () => {
         <p className="mt-2 text-gray-300 text-sm sm:text-base">
           Get exclusive updates about STAR BLOOM LANDSCAPING & AGRICULTURAL SERVICES, SP LLC,
         </p>
-        <div className="mt-4 flex flex-col sm:flex-row justify-center items-center">
+        {/* <div className="mt-4 flex flex-col sm:flex-row justify-center items-center">
           <input
             type="email"
             placeholder="Enter Your Email..."
@@ -40,24 +40,27 @@ const Footer = () => {
           <button className="bg-yellow-600 text-white px-5 py-3 rounded-md sm:rounded-r-md w-full sm:w-auto">
             Subscribe!
           </button>
-        </div>
+        </div> */}
 
         {/* Social Icons */}
         <div className="mt-6 flex justify-center space-x-4 sm:space-x-6">
           <a
-            href="#"
+           href="https://web.facebook.com/starbloomlandscaping/?_rdc=1&_rdr#"
+           target="_blank"
             className="text-yellow-500 hover:text-yellow-300 text-xl sm:text-2xl"
           >
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/starbloomlandscaping"
+           target="_blank"
             className="text-yellow-500 hover:text-yellow-300 text-xl sm:text-2xl"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a
-            href="#"
+           href="https://www.linkedin.com/company/star-bloom-landscaping-agricultural-services/about/?viewAsMember=true"
+           target="_blank"
             className="text-yellow-500 hover:text-yellow-300 text-xl sm:text-2xl"
           >
             <FontAwesomeIcon icon={faLinkedinIn} />
@@ -91,11 +94,11 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-yellow-500 font-bold">Contact No</h3>
-            <p>+971 555 655741</p>
+            <p>+971 5082 51751</p>
           </div>
           <div>
             <h3 className="text-yellow-500 font-bold">EMAIL</h3>
-            <p>nursery.enquiry@starbloom.ae</p>
+            <p>starbloomlandscaping@gmail.com</p>
           </div>
         </div>
 

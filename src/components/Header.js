@@ -28,13 +28,13 @@ const Header = () => {
         
         {/* Social Media Icons */}
         <div className="hidden md:flex items-center gap-4">
-          <a href="#" className="w-8 h-8 flex items-center justify-center rounded-full hover:text-[#AB7F46]">
+          <a href="https://web.facebook.com/starbloomlandscaping/?_rdc=1&_rdr#" target="_blank" className="w-8 h-8 flex items-center justify-center rounded-full hover:text-[#AB7F46]">
             <FontAwesomeIcon icon={faFacebookF} size="lg" />
           </a>
-          <a href="#" className="w-8 h-8 flex items-center justify-center rounded-full hover:text-[#AB7F46]">
+          <a href="https://www.instagram.com/starbloomlandscaping" className="w-8 h-8 flex items-center justify-center rounded-full hover:text-[#AB7F46]" target="_blank">
             <FontAwesomeIcon icon={faInstagram} size="lg" />
           </a>
-          <a href="#" className="w-8 h-8 flex items-center justify-center rounded-full hover:text-[#AB7F46]">
+          <a href="https://www.linkedin.com/company/star-bloom-landscaping-agricultural-services/about/?viewAsMember=true" className="w-8 h-8 flex items-center justify-center rounded-full hover:text-[#AB7F46]" target="_blank">
             <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
           </a>
         </div>
@@ -43,11 +43,11 @@ const Header = () => {
         <div className="flex flex-col md:flex-row items-center gap-4 text-center">
           <div className="flex items-center gap-2">
             <FontAwesomeIcon icon={faEnvelope} size="lg" className="hover:text-[#AB7F46]" />
-            <span>nursery.enquiry@starbloom.ae</span>
+            <span>starbloomlandscaping@gmail.com</span>
           </div>
           <div className="flex items-center gap-2">
             <FontAwesomeIcon icon={faPhone} size="lg" className="hover:text-[#AB7F46]" />
-            <span>+971 555 655741</span>
+            <span>+971 5082 51751</span>
           </div>
         </div>
 

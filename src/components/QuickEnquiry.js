@@ -53,10 +53,10 @@ const QuickEnquiry = () => {
 
     emailjs
       .send(
-        "service_rtczxve",
-        "template_83m938l",
+        "service_gia0txo",
+        "template_9owe37c",
         formData,
-        "xl5YWUPjrozH5MMWb"
+        "t2iyT2HLBV1aSL9NR"
       )
       .then((response) => {
         console.log("SUCCESS!", response);
@@ -106,7 +106,8 @@ const QuickEnquiry = () => {
           </p>
           <div className="flex flex-wrap gap-4 mt-3 pl-4 sm:pl-6 md:pl-8">
             <a
-              href="#"
+              href="https://web.facebook.com/starbloomlandscaping/?_rdc=1&_rdr#"
+              target="_blank"
               className="text-yellow-400 hover:text-yellow-300 transition duration-300 flex items-center gap-2 text-sm sm:text-lg"
             >
               <FontAwesomeIcon
@@ -116,7 +117,8 @@ const QuickEnquiry = () => {
               Facebook
             </a>
             <a
-              href="#"
+           href="https://www.instagram.com/starbloomlandscaping"
+           target="_blank"
               className="text-yellow-400 hover:text-yellow-300 transition duration-300 flex items-center gap-2 text-sm sm:text-lg"
             >
               <FontAwesomeIcon
@@ -126,11 +128,14 @@ const QuickEnquiry = () => {
               Instagram
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/star-bloom-landscaping-agricultural-services/about/?viewAsMember=true"
+              target="_blank"
               className="text-yellow-400 hover:text-yellow-300 transition duration-300 flex items-center gap-2 text-sm sm:text-lg"
             >
               <FontAwesomeIcon
                 icon={faLinkedinIn}
+              target="_blank"
+
                 className="text-base sm:text-xl"
               />{" "}
               LinkedIn

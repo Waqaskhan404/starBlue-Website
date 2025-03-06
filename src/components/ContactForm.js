@@ -39,10 +39,10 @@ const ContactForm = () => {
 
     emailjs
       .send(
-        "service_4u0ns9j",
-        "template_5g4koyb",
+        "service_vjspwni",
+        "template_0ry6ejj",
         formData,
-        "xl5YWUPjrozH5MMWb"
+        "t2iyT2HLBV1aSL9NR"
       )
       .then((response) => {
         console.log("SUCCESS!", response);
