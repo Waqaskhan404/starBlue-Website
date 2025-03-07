@@ -6,11 +6,11 @@ const Facts = () => {
         <div className="flex justify-center pt-12 sm:pt-20">
           <div className="max-w-2xl text-center">
             <h1 className="text-2xl sm:text-4xl font-bold text-[rgb(0,71,18)] pb-2 sm:pb-4">
-              Wahat Al Sahraa Nursery
+            STAR BLOOM LANDSCAPE AND AGRICULTURAL SERVICES
             </h1>
-            <h2 className="text-lg sm:text-[22px] text-[#b88650] font-semibold pb-4 sm:pb-8">
-              Best & Largest Plant Nursery in UAE and Middle East
-            </h2>
+            {/* <h2 className="text-lg sm:text-[22px] text-[#b88650] font-semibold pb-4 sm:pb-8">
+              Best & Professional  Nursery in the United Arab Emirates
+            </h2> */}
           </div>
         </div>
 
@@ -45,7 +45,7 @@ const Facts = () => {
             </h2>
             <h2 className="text-2xl sm:text-3xl font-semibold text-green-900">in the</h2>
             <h2 className="text-4xl sm:text-[45px] leading-tight font-bold text-green-900">
-              Middle East
+              UAE
             </h2>
           </div>
         </div>
