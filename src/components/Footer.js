@@ -13,12 +13,12 @@ const Footer = () => {
   const pathName = usePathname();
 
   const navLinks = [
-    { href: "/about", label: "About Us" },
-    { href: "/products", label: "Products" },
-    { href: "/projects", label: "Projects" },
-    { href: "/our-services", label: "Our Services" },
-    { href: "/our-gallery", label: "Our Gallery" },
-    { href: "/contact", label: "Contact Us" },
+    { href: "/about", label: "About Us"},
+    { href: "/products", label: "Products"},
+    { href: "/projects", label: "Projects"},
+    { href: "/our-services", label: "Our Services"},
+    { href: "/our-gallery", label: "Our Gallery"},
+    { href: "/contact", label: "Contact Us"},
   ];
 
   return (

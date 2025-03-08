@@ -11,12 +11,12 @@ const services = [
   {
     title: "Landscape Designing",
     description: "Transform your outdoor spaces with our expert landscape designing services. We bring creative and functional designs that enhance the beauty of your property.",
-    images: ["/landscape-designing1.jpg", "/landscape-designing2.jpg", "/landscape-designing3.jpg"],
+    images: ["/landscape-designing-1.jpg", "/landscape-designing-2.jpg", "/landscape-designing-3.jpg"],
   },
   {
     title: "Landscape Maintenance",
     description: "Keep your landscapes lush and vibrant with our professional maintenance services. We provide regular care to ensure the longevity and health of your greenery.",
-    images: ["/landscape-maintenance1.jpg", "/landscape-maintenance2.jpg", "/landscape-maintenance3.jpg","/landscape-maintenance4.jpg"],
+    images: ["/landscape-maintenance-1.jpg", "/landscape-maintenance-2.jpg", "/landscape-maintenance-3.jpg","/landscape-maintenance-4.jpg"],
   },
 ];
 
@@ -25,7 +25,8 @@ export const metadata = {
   description: "Learn more about StarBloom Plantation.",
 };
 
-export default function Services() {
+
+export default function OurServices() {
   return (
     <div className="container mx-auto p-6">
       <h1 className="text-4xl font-bold text-center mb-8">Our Services</h1>
@@ -37,7 +38,7 @@ export default function Services() {
           <p className="mb-4 text-gray-600">{service.description}</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {service.images.map((img, i) => (
-             <Image 
+             <img
              key={i} 
              src={img} 
              alt={service.title} 

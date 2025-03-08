@@ -129,7 +129,6 @@ const ContactForm = () => {
   className="w-full h-full min-h-[300px]"
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.5080588833395!2d54.4688861!3d24.3677643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e41ae6ef0149f%3A0x38c3eb480aca8574!2sMusaffah%2C%20MW2%2C%20Abu%20Dhabi%2C%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1234567890"
   allowFullScreen=""
-  loading="lazy"
 ></iframe>
         </div>
       </div>

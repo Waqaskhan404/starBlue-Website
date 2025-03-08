@@ -10,12 +10,12 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md  font-[Poppins] text-[14px] font-semibold relative">
-      <div className="container flex  items-center justify-between">
+    <nav className="bg-white shadow-md font-[Poppins] text-[14px] font-semibold relative">
+      <div className="container flex items-center justify-between">
         {/* Left Side - Logos */}
         <div className="flex items-center gap-4 ml-3">
           <img
-            src="/SB-Logo.png"
+            src="/SB-Logo.png" // Ensure this path is correct
             alt="logo-sb"
             className="h-16 md:h-20 lg:h-24 xl:h-28"
             loading="lazy"
@@ -71,8 +71,6 @@ const NavBar = () => {
         </button>
 
         <ul className="flex flex-col items-center mt-6 gap-1">
-          {" "}
-          {/* Tighter spacing */}
           {[
             { name: "Home", path: "/" },
             { name: "About Us", path: "/about" },
@@ -85,16 +83,11 @@ const NavBar = () => {
             <li
               key={item.path}
               className={`w-full text-center py-1 ${
-                // Less padding
-                pathName === item.path
-                  ? "bg-green-800 text-white"
-                  : "hover:bg-green-600"
+                pathName === item.path ? "bg-green-800 text-white" : "hover:bg-green-600"
               }`}
-              onClick={() => setIsMenuOpen(false)} // Close on click
+              onClick={() => setIsMenuOpen(false)}
             >
               <Link href={item.path} className="block w-full px-2 py-1">
-                {" "}
-                {/* Reduced padding */}
                 {item.name}
               </Link>
             </li>
