@@ -43,6 +43,7 @@ export default function Services() {
              alt={service.title} 
              width={300} 
              height={200} 
+             loading="lazy"
              className="rounded-lg shadow-lg object-cover h-[200px] w-full"
            />
             ))}

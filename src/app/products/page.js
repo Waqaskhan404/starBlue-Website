@@ -165,6 +165,8 @@ export default function ProductPage() {
                 src={product.image}
                 alt={product.name}
                 className="w-full h-32 object-cover rounded-lg"
+                loading="lazy"
+
               />
               <h3 className="text-base sm:text-lg font-semibold mt-2 text-center text-green-900">
                 {product.name}

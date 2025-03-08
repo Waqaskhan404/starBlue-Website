@@ -18,6 +18,7 @@ const NavBar = () => {
             src="/SB-Logo.png"
             alt="logo-sb"
             className="h-16 md:h-20 lg:h-24 xl:h-28"
+            loading="lazy"
           />
         </div>
 

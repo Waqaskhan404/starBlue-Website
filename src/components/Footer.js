@@ -98,7 +98,7 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-yellow-500 font-bold">EMAIL</h3>
-            <p>starbloomlandscaping@gmail.com</p>
+            <p>enquiry@starbloomlandscaping.ae</p>
           </div>
         </div>
 

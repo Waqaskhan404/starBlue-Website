@@ -49,6 +49,7 @@ const HeroSlider = () => {
           src={images[currentIndex].src}
           alt="Slider Image"
           className={`w-full h-full object-cover transition-transform duration-[5s] ${isZooming ? "scale-110" : "scale-100"}`}
+          loading="lazy"
         />
 
         {/* Overlay Text - Responsive Sizing */}

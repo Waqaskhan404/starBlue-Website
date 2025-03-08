@@ -32,6 +32,7 @@ const PlantCategories = () => {
               <img
                 src={category.image}
                 alt={category.name}
+                loading="lazy"
                 className="w-full h-32 sm:h-40 md:h-48 object-cover transition-all duration-300 hover:scale-110 hover:brightness-90"
               />
             </div>

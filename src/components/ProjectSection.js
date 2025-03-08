@@ -58,6 +58,7 @@ const ProjectSection = () => {
               <img
                 src={project.image}
                 alt={project.title}
+                loading="lazy"
                 className="w-full h-56 sm:h-64 md:h-72 object-cover transition-transform duration-300 group-hover:scale-105"
               />
               {/* Overlay */}

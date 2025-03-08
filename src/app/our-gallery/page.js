@@ -38,6 +38,7 @@ const Gallery = () => {
               src={src}
               alt={`Gallery Image ${index + 1}`}
               className="w-full h-48 object-cover"
+              loading="lazy"
             />
           </div>
         ))}

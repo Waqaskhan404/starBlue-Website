@@ -79,6 +79,7 @@ const AboutUs = () => {
             src="/happy-clients.jpg"
             alt="Heart Shaped Plant"
             className="rounded-md w-3/4 sm:w-2/3 md:w-3/4 mx-auto"
+            loading="lazy"
           />
           <div className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 bg-green-700 text-white p-4 rounded-bl-2xl rounded-br-2xl shadow-lg text-center w-48">
             <p className="text-2xl font-bold">

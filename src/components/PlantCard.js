@@ -11,6 +11,7 @@ const PlantCard = ({ title, description, image }) => {
           alt={title}
           layout="fill"
           objectFit="cover"
+          loading="lazy"
         />
       </div>
 

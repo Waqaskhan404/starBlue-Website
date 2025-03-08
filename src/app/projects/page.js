@@ -47,6 +47,7 @@ const ProjectCard = ({ project }) => {
               key={index}
               src={img}
               alt={`Thumbnail ${index}`}
+              loading="lazy"
               className={`w-12 h-12 object-cover cursor-pointer rounded ${
                 index === currentImage ? "border-2 border-green-600" : ""
               }`}

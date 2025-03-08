@@ -10,6 +10,7 @@ const IndoorPlants = () => {
             src="/indoor-plants.jpg"
             alt="Indoor Plants"
             className="w-full rounded-lg shadow-md object-cover"
+            loading="lazy"
           />
         </div>
 
