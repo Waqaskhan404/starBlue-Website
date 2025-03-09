@@ -13,12 +13,12 @@ const NavBar = ({ keyProp }) => {
 
   const navLinks=[
     { name: "Home", path: "/" },
-    { name: "About Us", path: "/about" },
-    { name: "Products", path: "/products" },
-    { name: "Projects", path: "/projects" },
-    { name: "Our Services", path: "/our-services" },
-    { name: "Our Gallery", path: "/our-gallery" },
-    { name: "Contact Us", path: "/contact" },
+    { name: "About Us", path: "/about/" },
+    { name: "Products", path: "/products/" },
+    { name: "Projects", path: "/projects/" },
+    { name: "Our Services", path: "/our-services/" },
+    { name: "Our Gallery", path: "/our-gallery/" },
+    { name: "Contact Us", path: "/contact/" },
   ]
 
 

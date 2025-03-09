@@ -34,7 +34,8 @@ export default function OurServices() {
       {services.map((service, index) => (
         <div key={index} className="mb-12">
           <h2 className="text-2xl font-semibold mb-4 flex items-center">
-            <FontAwesomeIcon icon={faStar} className="text-yellow-500 mr-2" /> {service.title}
+          <FontAwesomeIcon icon={faStar} size="lg" className="text-yellow-500 mr-2" />
+          {service.title}
           </h2>
           <p className="mb-4 text-gray-600">{service.description}</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">

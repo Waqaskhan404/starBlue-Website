@@ -14,14 +14,17 @@ const poppins = Poppins({
   preload: true,
 });
 
-// export const metadata = {
-//   title: "Home - StarBloom Plantation",
-//   description: "Learn more about StarBloom Plantation.",
-// };
+
+
+
 
 export default function RootLayout({ children, pageProps }) {
   const pathName = usePathname();
   const [key, setKey] = useState(pathName);
+
+  useEffect(() => {
+    document.title = "Home - StarBloom Plantation";
+  }, []);
 
   useEffect(() => {
     setKey(pathName);
