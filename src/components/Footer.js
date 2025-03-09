@@ -71,6 +71,7 @@ const Footer = () => {
         <div className="mt-8 flex flex-wrap justify-center gap-4 sm:gap-6 text-gray-300 text-sm sm:text-base">
           {navLinks.map(({ href, label }) => (
             <Link
+            prefetch={false}
               key={href}
               href={href}
               className={`relative transition duration-200 pb-1 ${

@@ -1,13 +1,32 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-const NavBar = () => {
+const NavBar = ({ keyProp }) => {
   const pathName = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentPath, setCurrentPath] = useState(keyProp);
+
+
+  const navLinks=[
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Products", path: "/products" },
+    { name: "Projects", path: "/projects" },
+    { name: "Our Services", path: "/our-services" },
+    { name: "Our Gallery", path: "/our-gallery" },
+    { name: "Contact Us", path: "/contact" },
+  ]
+
+
+  useEffect(() => {
+    setCurrentPath(pathName);
+  }, [pathName]);;
+
+  // console.log("PathName",currentPath);
 
   return (
     <nav className="bg-white shadow-md font-[Poppins] text-[14px] font-semibold relative">
@@ -32,20 +51,12 @@ const NavBar = () => {
 
         {/* Navigation Links (Laptop View) */}
         <ul className="hidden lg:flex items-center gap-8 text-black">
-          {[
-            { name: "Home", path: "/" },
-            { name: "About Us", path: "/about" },
-            { name: "Products", path: "/products" },
-            { name: "Projects", path: "/projects" },
-            { name: "Our Services", path: "/our-services" },
-            { name: "Our Gallery", path: "/our-gallery" },
-            { name: "Contact Us", path: "/contact" },
-          ].map((item) => (
+          {navLinks.map((item) => (
             <li key={item.path}>
               <Link
                 href={item.path}
                 className={`${
-                  pathName === item.path
+                  currentPath === item.path
                     ? "text-green-700 border-b-2 border-green-700"
                     : "hover:text-green-700 hover:border-b-2 hover:border-green-700"
                 } pb-1`}
@@ -71,19 +82,11 @@ const NavBar = () => {
         </button>
 
         <ul className="flex flex-col items-center mt-6 gap-1">
-          {[
-            { name: "Home", path: "/" },
-            { name: "About Us", path: "/about" },
-            { name: "Products", path: "/products" },
-            { name: "Projects", path: "/projects" },
-            { name: "Our Services", path: "/our-services" },
-            { name: "Our Gallery", path: "/our-gallery" },
-            { name: "Contact Us", path: "/contact" },
-          ].map((item) => (
+          {navLinks.map((item) => (
             <li
               key={item.path}
               className={`w-full text-center py-1 ${
-                pathName === item.path ? "bg-green-800 text-white" : "hover:bg-green-600"
+                currentPath === item.path ? "bg-green-800 text-white" : "hover:bg-green-600"
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
